@@ -2,20 +2,19 @@
     <div class="nsform-container">
         <div class="menu-nsform-container">
             <div class="u-button menu-active-nsform menu-nsform-left">Login</div>
-            <div class="u-button menu-nsform  menu-nsform-right" @click="goRegister()">Registra Account</div>
+            <div class="u-button menu-nsform  menu-nsform-right" @click="goRegister()">Register Account</div>
         </div>
         <div :class="['kiwi-' + themeName + '-simple-nick', 'u-form', 'u-input', 'u-input-text', 'u-input-text--focus', 'u-input-text--reveal-value']" id="nickserv-form" title="NickServ" style="text-align:center;">
             <p v-if="componentProps != null" style="margin-bottom:-0.5em">{{ componentProps.preMessage }} <span class="current-nickname">{{ componentProps.channel }}</span> {{ componentProps.postMessage }}</p>
             <p :class="['kiwi-' + themeName + '-simple-error', 'kiwi-ns-login']" id="validate">{{LoginText}} <span v-if="componentProps != null">{{ componentProps.action }}</span><span v-if="componentProps != null && componentProps.channel == ''" class="current-nickname">{{ componentProps.join }}</span></p>
-             <p v-if="!componentProps" style="margin: -1em 0 0.5em 0;">Usa Il tuo nickname oppure un alias del tuo gruppo. <a class="u-link" href="https://www.simosnap.org/account" target="_blank">Pannello Account</a></p>
             <div class="u-input-text kiwi-ns-input">
                 <div class="u-input-text-inputs">
-                    <input class="u-input" placeholder="Inserisci account NickServ" type="text" v-model="accountInput">
+                    <input class="u-input" placeholder="Insert your nickname" type="text" v-model="accountInput">
                 </div>
             </div>
             <div class="u-input-text kiwi-ns-input">
                 <div class="u-input-text-inputs">
-                    <input class="u-input" placeholder="Inserisci la password" type="password" v-model="pwdInput">
+                    <input class="u-input" placeholder="Insert your password" type="password" v-model="pwdInput">
                 </div>
             </div>
             <div class="u-input-text-underline">

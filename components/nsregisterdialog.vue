@@ -6,15 +6,15 @@
         </div>
         <div :class="['kiwi-' + themeName + '-simple-nick', 'u-form', 'u-input', 'u-input-text', 'u-input-text--focus', 'u-input-text--reveal-value']" id="nickserv-form" style="text-align:center;">
             <p :class="['kiwi-' + themeName + '-simple-error', 'kiwi-ns-register']" id="validate"> {{RegisterText}} </p>
-            <p style="margin: -1em 0 0.5em 0;">Il tuo nome account sarà: <span class="current-nickname">{{currentNick}}</span> <span class="current-nickname-change" @click="goNickChange()"><i title="Cambia Nickname" class="fa fa-exchange" aria-hidden="true"></i></span></p>
+            <p style="margin: -1em 0 0.5em 0;">Your username will be: <span class="current-nickname">{{currentNick}}</span> <span class="current-nickname-change" @click="goNickChange()"><i title="Change Nickname" class="fa fa-exchange" aria-hidden="true"></i></span></p>
             <div class="u-input-text kiwi-ns-input">
                 <div class="u-input-text-inputs">
-                    <input class="u-input" placeholder="Inserisci un indirizzo email valido" type="text" v-model="accountInput">
+                    <input class="u-input" placeholder="Insert a valid email" type="text" v-model="accountInput">
                 </div>
             </div>
             <div class="u-input-text kiwi-ns-input">
                 <div class="u-input-text-inputs">
-                    <input class="u-input" placeholder="Inserisci la password" type="password" v-model="pwdInput">
+                    <input class="u-input" placeholder="Insert the password" type="password" v-model="pwdInput">
                 </div>
             </div>
             <div class="u-input-text-underline">
